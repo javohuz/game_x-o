@@ -22,7 +22,10 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/javohuz/game_x-o.git
-
+```
+```bash
 npm install
-
+```
+```bash
 npm start
+```
