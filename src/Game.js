@@ -36,10 +36,6 @@ const Game = () => {
     setGameStarted(true); // Set game started after first move
   };
 
-  const jumpTo = (step) => {
-    setStepNumber(step);
-    setXIsNext(step % 2 === 0);
-  };
 
   const startNewGame = () => {
     setHistory([{ squares: Array(9).fill(null) }]);

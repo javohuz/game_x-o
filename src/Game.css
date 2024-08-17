@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .game-container {
@@ -12,7 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); 
   color: white;
   position: relative;
   transition: filter 0.3s;
@@ -67,6 +67,10 @@ body {
 }
 
 .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
   width: 160px;
   height: 160px;
   background: white;
@@ -114,4 +118,83 @@ body {
 .winner-popup button:hover {
   transform: scale(1.05);
   box-shadow: 6.4px 6.4px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .game-top {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .control-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 0 8px;
+  }
+
+  .game-board {
+    width: 90%;
+  }
+
+  .board-row {
+  }
+
+  .square {
+    width: 90px;
+    height: 90px;
+    font-size: 36px;
+  }
+
+  .winner-popup {
+    padding: 24px;
+  }
+
+  .winner-popup h2 {
+    font-size: 32px;
+  }
+
+  .winner-popup button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens 470px and below */
+@media (max-width: 470px) {
+  .game-top {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+  .control-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+
+  .game-board {
+    width: 95%;
+  }
+
+  
+
+  .square {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .winner-popup {
+    padding: 16px;
+  }
+
+  .winner-popup h2 {
+    font-size: 24px;
+  }
+
+  .winner-popup button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
