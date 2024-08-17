@@ -1,0 +1,117 @@
+/* Game.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white;
+  position: relative;
+  transition: filter 0.3s;
+}
+
+.game-container.blur {
+  filter: blur(5px) drop-shadow(0 0 10px black); 
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 32px;
+}
+
+.control-button {
+  padding: 16px 32px;
+  font-size: 19.2px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 3.2px 3.2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.control-button:hover {
+  transform: scale(1.05);
+  box-shadow: 6.4px 6.4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.game-board {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 160px;
+  height: 160px;
+  background: white;
+  border: 3.2px solid black;
+  font-size: 57.6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.square:hover {
+  background: lightgray;
+}
+
+.winner-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  color: black;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.winner-popup h2 {
+  margin-bottom: 16px;
+  font-size: 38.4px;
+}
+
+.winner-popup button {
+  padding: 16px 32px;
+  font-size: 19.2px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.winner-popup button:hover {
+  transform: scale(1.05);
+  box-shadow: 6.4px 6.4px 16px rgba(0, 0, 0, 0.5);
+}
