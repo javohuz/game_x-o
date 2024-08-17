@@ -2,11 +2,17 @@
 
 A simple Tic Tac Toe game built with React. This game allows two players to play against each other in a local environment.
 
+## Live Demo
+
+You can try out the deployed application here: [https://game.javo.uz](https://game.javo.uz)
+
 ## Features
 
 - **Play Against Another Player**: Enjoy a local game with a friend.
 - **Restart Game**: Easily start a new game at any time.
 - **Game Status**: Displays game results, including win and draw conditions.
+
+
 
 ## Installation
 
